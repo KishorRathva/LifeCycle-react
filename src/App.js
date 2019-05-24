@@ -1,14 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import LifecycleA from './components/LifecycleA';
+import React, { Component } from 'react'
+import './App.css'
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
+import ClickCounterTwo from './components/ClickCounterTwo';
 
-function App() {
-  return (
-    <div className="App">
-      <LifecycleA/>
-    </div>
-  );
+export class App extends Component {
+  render() {
+    return (
+      <div>
+      <ClickCounterTwo/>
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
